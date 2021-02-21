@@ -6,10 +6,16 @@ body {
   justify-content: center;
   align-items: center;
 }
+h2{
+  font-weight: bolder;
+  color:white;
+  -webkit-text-stroke: 0.059rem black;
+}
 h1{
+  -webkit-text-stroke: 0.019rem black;
   font-family: 'Playfair Display', serif;
   font-size: 5rem;
-  background: -webkit-linear-gradient(0deg,red, green,blue);
+  background: -webkit-linear-gradient(-15deg,red,orange,yellow,lime,skyblue,pink,blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

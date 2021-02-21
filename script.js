@@ -4,4 +4,5 @@ function RGB()
   var g = Number(document.getElementById("Green").value).toString(16);
   var b = Number(document.getElementById("Blue").value).toString(16);
   document.body.style.backgroundColor="#"+r+g+b;
+  document.getElementById("code").innerHTML="#"+r+g+b;
 }
