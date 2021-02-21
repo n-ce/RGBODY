@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+body {
+  height: 94vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  background: -webkit-linear-gradient(0deg,red, green,blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#Red,#Blue,#Green {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 10px;
+  border-radius: 20px;
+  margin:10%;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+#Red:hover,#Blue:hover,#Green:hover
+{opacity: 1}
+#Red::-webkit-slider-thumb,#Blue::-webkit-slider-thumb,#Green::-webkit-slider-thumb
+{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#Red::-webkit-slider-thumb
+{background:red}
+#Blue::-webkit-slider-thumb
+{background:blue}
+#Green::-webkit-slider-thumb
+{background:green}
