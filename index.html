@@ -3,14 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="manifest" href="manifest.json" />
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/png" sizes="512x512" href="512px_icon.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="192px_icon.png" />
-    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css"/>
     <title>RGBODY</title>
 </head>
 <body>
+  <script>
+    if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+    navigator.serviceWorker
+    .register("service-worker.js")
+    .then(res => console.log("service worker registered"))
+    .catch(err => console.log("service worker not registered", err))
+    })}
+  </script>
   <h1>RGBODY</h1>
   <input type="range" id="Red" oninput="RGB()" min="16" max="255">
   <input type="range" id="Green" oninput="RGB()"min="16" max="255">

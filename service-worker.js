@@ -1,4 +1,4 @@
-const staticLoader = "Loader"
+const staticLoader = "RGBODY"
 const assets = [
   "/",
   "index.html",
